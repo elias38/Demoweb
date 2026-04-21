@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <link rel="stylesheet" href="Creadormusical.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creador Musical – Corridos a tu medida</title>
+  <style>
+    /* —— Estilos básicos y responsivos —— */
+    :root{--primary:#1e88e5;--light:#fafafa;--dark:#222}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--dark);line-height:1.6}
+    header{background:var(--primary);color:#fff;text-align:center;padding:2.5rem 1rem}
+    header h1{font-size:2.2rem;margin-bottom:.5rem}
+    nav{margin-top:1.5rem}
+    nav button{border:none;border-radius:4px;padding:.55rem 1.1rem;margin:0 .4rem;font-size:1rem;cursor:pointer;transition:opacity .2s}
+    nav button:hover{opacity:.85}
+    section{display:none;padding:2.5rem 1.2rem;max-width:900px;margin:auto}
+    section.active{display:block}
+    h2{margin:1.6rem 0 .9rem;font-size:1.6rem;color:var(--primary)}
+    ol,ul{margin-left:1.1rem}
+    footer{background:#e0e0e0;text-align:center;padding:1.2rem}
+    a{color:var(--primary);text-decoration:none}
+  </style>
+</head>
+<body>  que 
+  <header>
+    <h1>CreadorMusical.org</h1>
+    <video src="/capibara.ads/María.mp4";>
+    <p>Transformamos tu historia en un corrido inolvidable</p>
+    <nav>
+      <button onclick="setLang('es')">Español</button>
+      <button onclick="setLang('en')">English</button>
+    </nav>
+  </header>  <!-- —— Sección en Español —— -->  <section id="es" class="active">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos un colectivo de compositores y productores especializados en corridos regionales mexicanos. Nuestra misión es dar voz a quienes desean plasmar su legado, homenajear a sus seres queridos o inmortalizar momentos importantes a través de una canción con raíces auténticas.</p><h2>Nuestra visión</h2>
+<p>Acercar el arte del corrido a personas que no cuentan con el tiempo, los conocimientos técnicos o que viven lejos de estudios de grabación. Queremos que cualquiera, sin importar su ubicación, pueda contar su historia con ritmo y corazón.</p>
+
+<h2>¿Cómo funciona?</h2>
+<ol>
+  <li><strong>Cuéntanos tu historia:</strong> llena nuestro formulario o mándanos un mensaje de voz.</li>
+  <li><strong>Composición personalizada:</strong> escribimos la letra y arreglamos la música a tu gusto.</li>
+  <li><strong>Revisión y entrega:</strong> recibes tu corrido en formato digital listo para compartir.</li>
+</ol>
+
+
+
+
+<h2>Servicios</h2>
+<ul>
+  <li>Corridos familiares y de legado</li>
+  <li>Saludos musicales personalizados</li>
+  <li>Canciones conmemorativas y homenaje</li>
+  <li>Instrumentales originales</li>
+</ul>
+
+<h2>Contáctanos</h2>
+<p>Correo: <a href="mailto:hola@creadormusical.org">hola@creadormusical.org</a><br>
+   WhatsApp: +52&nbsp;222&nbsp;123&nbsp;4567</p>
+
+  </section>  <!-- —— English Section —— -->  <section id="en">
+    <h2>About Us</h2>
+    <p>We are a collective of songwriters and producers specialized in traditional Mexican corridos. Our mission is to give voice to people who want to leave their legacy, honor their loved ones, or immortalize special moments through an authentic song.</p><h2>Our Vision</h2>
+<p>We bring the art of the corrido to anyone who lacks time, technical knowledge, or lives far from recording studios. Wherever you are, you can tell your story with rhythm and soul.</p>
+
+<h2>How It Works</h2>
+<ol>
+  <li><strong>Share your story:</strong> fill out our form or send us a voice note.</li>
+  <li><strong>Custom composition:</strong> we write the lyrics and arrange the music to your taste.</li>
+  <li><strong>Review & delivery:</strong> receive your corrido in digital format, ready to share.</li>
+</ol>
+
+<h2>Services</h2>
+<ul>
+  <li>Family & legacy corridos</li>
+  <li>Personalized musical greetings</li>
+  <li>Commemorative & tribute songs</li>
+  <li>Original instrumentals</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Email: <a href="mailto:hello@creadormusical.org">hello@creadormusical.org</a><br>
+   WhatsApp: +52&nbsp;222&nbsp;123&nbsp;4567</p>
+
+  </section>  <footer>
+    © <span id="year"></span> CreadorMusical.org · Todos los derechos reservados
+  </footer>  <script>
+    /* —— JavaScript para selector de idioma —— */
+    function setLang(lang){
+      document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.documentElement.lang=lang;
+    }
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script></body>
+</html>
